@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 @Data
 @Entity
 @NoArgsConstructor
-public class Comment {
+public class Comment extends Auditable {
     @Id
     @GeneratedValue
     private Long id;
