@@ -1,0 +1,13 @@
+version: '3.8'
+
+# https://www.baeldung.com/spring-boot-postgresql-docker
+services:
+  db:
+    image: 'postgres:alpine'
+    container_name: springit
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_DB=springit
+      - POSTGRES_USER=springit
+      - POSTGRES_PASSWORD=springit
