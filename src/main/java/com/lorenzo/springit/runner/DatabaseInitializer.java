@@ -25,7 +25,7 @@ public class DatabaseInitializer implements CommandLineRunner {
         Comment comment = new Comment("good link", link);
         commentRepository.save(comment);
 
-        link.addComment(comment);
+//        link.addComment(comment);
 
         System.out.println("Database initizalized");
     }
